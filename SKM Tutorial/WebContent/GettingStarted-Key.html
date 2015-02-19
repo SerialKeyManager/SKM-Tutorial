@@ -63,17 +63,23 @@
         <div class="starter-template">
             <h1>Getting started with Serial Key Manager</h1>
             <p class="lead">A quick introduction to the basics of Serial Key Manager platform</p>
-            
             <h2>More about keys</h2>
             <p>A Key, as you might have noticed, is an important part of the licensing process. During key creation in the <a href="GettingStarted.html">previous tutorial</a>, it could be seen that there are so many parameters that can be customized. The aim of this article is to describe how most of the paramters can be used.</p>
-           
+            <p style="text-align:center; font-family:Consolas;font-weight:bold;">MUYVD-LSEBY-CXHRQ-XFAGY</p>
             <h3>Set Time</h3>
-            <p>The <i>set time</i> option allows you to specify the number of days that the key should be valid. Note, this is </p>
+            <p>The <i>set time</i> option allows you to specify the number of days that the key should be valid. <b>Note, the fact that a key has 'expired' does not mean it's invalid</b>. In other words, it's up to your client application to decide whether the key should be invalid if the it has expired. <mark>Features</mark> are of great use for this situation, which we will cover later.</p>Usually, if you don't want to have a time restriction on the key, simply keep it set to 30 days.</p>
+            <h3>No Of Keys</h3>
+            <p>This is the number of keys you want to generate.Simple as that!</p>
+            <h3>Notes</h3>
+            <p>Sometimes, it can be useful to save some additional notes along with a key. These are not stored in the key itself. Using the <mark>Web API</mark>, it is possible to access these. This is not allowed by default, however, it can be changed <a href="https://serialkeymanager.com/Account/Manage#tabs-3">here</a></p>
+            <h3>Features</h3>
+            <p>In many cases, it is desired to allow certain set of features to be enabled based on the key that is provided. The simplest example is to have one key that works as a <b>trial key</b> and another as <b>full-featured key</b>. However, you are able to set up more complex features, for instance, <i>one trial key</i>, a <i>registered trial</i> or a <i>registered unlimited key</i>. This is illustrated below:</p>
+            <center><img src="images/versions_example.jpg"  style="width:250px;"/></center>            
             <h2>Summary</h2>
             In this article, we've looked at the two major concepts: a <mark>Product</mark> and a <mark>Key</mark>. We saw that a product is a way to organize your keys for your software, and that keys contain information that can be interepreted by your software during key validation. We also so how a product with one key could be created. Next, we're going to look more in detail at the information stored in a key!
             <nav>
                 <ul class="pager">
-                    <!--<li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>-->
+                    <li class="previous"><a href="GettingStarted.html"><span aria-hidden="true">&larr;</span>Introduction</a></li>
                     <li class="next"><a href="#">More about a key<span aria-hidden="true">&rarr;</span></a></li>
                 </ul>
             </nav>
