@@ -54,7 +54,26 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Getting Started <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="GettingStarted.html">Introduction</a></li>
+                            <li><a href="GettingStarted-Key.html">More about a key</a></li>
+                            <li><a href="GettingStarted-WebAPI.html">Web API</a></li>
+                            <!--
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                                -->
+                        </ul>
+                    </li>
+                </ul>
             </div><!--/.nav-collapse -->
+
+
         </div>
     </nav>
 
@@ -64,8 +83,10 @@
             <h1>Getting started with Serial Key Manager</h1>
             <p class="lead">A quick introduction to the basics of Serial Key Manager platform</p>
             <h2>Web API</h2>
-            <p>A Key, as you might have noticed, is an important part of the licensing process. During key creation in the <a href="GettingStarted.html">previous tutorial</a>, it could be seen that there are so many parameters that can be customized. The aim of this article is to describe how most of the paramters can be used.</p>
-            <p style="text-align:center; font-family:Consolas;font-weight:bold;">MUYVD-LSEBY-CXHRQ-XFAGY</p>
+            <p>In the <a href="GettingStarted-Key.html">previous tutorial</a> we saw that <i>keys</i> have many different fields that can be customized.
+            Imagine now that you are able to retreive these values from any application.
+            Clearly, this would allow you to make many customization to the <abbr title="The application that is going to be used by your client.">client software</abbr> based on the key.
+            The way this information can be accessed is through the Web API.</p>
             <h3>Set Time</h3>
             <p>The <i>set time</i> option allows you to specify the number of days that the key should be valid. <b>Note, the fact that a key has 'expired' does not mean it's invalid</b>. In other words, it's up to your client application to decide whether the key should be invalid if the it has expired. <mark>Features</mark> are of great use for this situation, which we will cover later.</p>Usually, if you don't want to have a time restriction on the key, simply keep it set to 30 days.</p>
             <h3>No Of Keys</h3>
