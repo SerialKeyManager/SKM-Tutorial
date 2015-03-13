@@ -88,7 +88,7 @@
             <h1>Getting started with Serial Key Manager</h1>
             <p class="lead">A quick introduction to the basics of Serial Key Manager platform</p>
             <h2>More about keys</h2>
-            <p>A Key, as you might have noticed, is an important part of the licensing process. During key creation in the <a href="GettingStarted.html">previous tutorial</a>, it could be seen that there are so many parameters that can be customized. The aim of this article is to describe how most of the paramters can be used.</p>
+            <p>A Key, as you might have noticed, is an important part of the licensing process. During key creation in the <a href="GettingStarted.html">previous tutorial</a>, it could be seen that there are so many parameters that can be customized. The aim of this article is to describe how most of the parameters can be used.</p>
             <p style="text-align:center; font-family:Consolas;font-weight:bold;">MUYVD-LSEBY-CXHRQ-XFAGY</p>
             <h3>Set Time</h3>
             <p>The <i>set time</i> option allows you to specify the number of days that the key should be valid. <b>Note, the fact that a key has 'expired' does not mean it's invalid</b>. In other words, it's up to your client application to decide whether the key should be invalid if the it has expired. <mark>Features</mark> are of great use for this situation, which we will cover later.</p>Usually, if you don't want to have a time restriction on the key, simply keep it set to 30 days.</p>
@@ -99,7 +99,7 @@
             <h3>Features</h3>
             <p>In many cases, it is desired to allow certain set of features to be enabled based on the key that is provided. The simplest example is to have one key that works as a <b>trial key</b> and another as <b>full-featured key</b>. However, you are able to set up more complex features, for instance, <i>one trial key</i>, a <i>registered trial</i> or a <i>registered unlimited key</i>. This is illustrated below:</p>
             <center><img src="images/versions_example.jpg"  style="width:300px;"/></center>            
-            <p>In order to keep track of what <mark>version</mark> the user should have, you could, for instance, connect <i>trial key</i> with <b>Feature1</b>, <i>registered trial</i> with <b>Feature2</b> annd <i>registered unlimited key</i> with <b>Feature 3</b>.
+            <p>In order to keep track of what <mark>version</mark> the user should have, you could, for instance, connect <i>trial key</i> with <b>Feature1</b>, <i>registered trial</i> with <b>Feature2</b> and <i>registered unlimited key</i> with <b>Feature 3</b>.
             Of course, we could also optimize this a little bit using two features only, one that indicates whether it is a registered version and another whether it is time limited. This is described more in details <a href="http://skgl.codeplex.com/wikipage?title=Using%20Features%20to%20Solve%20Problems">here</a>.</p>
             <p>In your client software, you could have similar code as shown below:</p>
             <pre>
@@ -133,7 +133,7 @@ else if Feature3 == True
             <h4>Maximum number of machines</h4>
             <p>In order to restrict the number of computers that can use the same key, you can set enable this feature by enter a number greater than zero. This number represents the maximum number of computers that can activate the key.
             <h4>Optional field</h4>
-            <p>In many applications nowadays, it is important to put additional restrictions on using a particular functionality, eg. a quota. This can be achieved by the Optional field option. Using the Web API, you are able to read or decrease the number you specify in this box. It may not be inreased through the Web API.</p>
+            <p>In many applications nowadays, it is important to put additional restrictions on using a particular functionality, eg. a quota. This can be achieved by the Optional field option. Using the Web API, you are able to read or decrease the number you specify in this box. It may not be increased through the Web API.</p>
             <h4></h4>
             <h2>Summary</h2>
             <p>In this article, we've looked at all the options that can be specified in a key. We made some references to the Web API, which we will discuss even further in the next article!</p>
